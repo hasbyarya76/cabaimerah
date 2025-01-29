@@ -30,10 +30,10 @@ def preprocess_image(image_path):
     img = cv2.imread(image_path)
     
     # Mengubah ukuran gambar
-    img = cv2.resize(img, (128, 128))  # Ubah ukuran gambar
+    img = cv2.resize(img, (256, 256))  # Ubah ukuran gambar
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Konversi ke RGB
 # Normalisasi piksel
-    img_array = img / 255.0
+    img_array = img / 256.0
     
     # Tambahkan dimensi batch
     img_array = np.expand_dims(img_array, axis=0)  
