@@ -20,7 +20,7 @@ onnx.checker.check_model(onnx_model)
 session = ort.InferenceSession(MODEL_PATH)
 
 # Daftar kelas sesuai dengan model Anda
-class_names = {0: 'Bukan Daun', 1: 'Healthy', 2: 'Penyakit Cescospora', 3: 'Penyakit Kuning', 4: 'Penyakit Mozaik', 5: 'Penyakit Tungau'}
+class_names = {0: 'Bukan Daun', 1: 'Bukan Daun Cabai', 2: 'Healthy', 3: 'Penyakit Cescospora', 4: 'Kuning', 5: 'Mozaik', 6: 'Tungau'}
 
 def preprocess_image(image_path):
     """
